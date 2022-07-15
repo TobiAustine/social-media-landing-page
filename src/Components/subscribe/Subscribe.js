@@ -22,9 +22,10 @@ const Subscribe = () => {
     <div className="container subscribe">
       <h2 data-aos='fade-up'>Subscribe Now...</h2>
       <form>
-        <div className="form" data-aos='fade-right'>
+        <div className="form"  data-aos='fade-right'>
         <input type="text" placeholder='Enter Email here...' />
         <button>Subscribe</button></div>
+        
       </form>
       <div className="social-icons" data-aos='fade-left'>
         <div className="social-icon">
