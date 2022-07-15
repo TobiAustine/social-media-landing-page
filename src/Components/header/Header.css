@@ -131,3 +131,11 @@
         transform: translateY(8px);
     }
  }
+
+ @media screen and (max-width:600px) {
+
+   .floating-icon{
+      bottom: -19rem;
+ }
+
+ }
