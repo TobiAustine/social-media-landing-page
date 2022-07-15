@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3e20634a.css",
+    "main.js": "/static/js/main.88f7d484.js",
+    "static/media/groupSmile.jpg": "/static/media/groupSmile.b0b9525f6f955175308d.jpg",
+    "static/media/phoneInHand.jpg": "/static/media/phoneInHand.d0f8be47474163a3c0cb.jpg",
+    "static/media/fistBump.jpg": "/static/media/fistBump.8cc1b9b1644c562a7020.jpg",
+    "index.html": "/index.html",
+    "main.3e20634a.css.map": "/static/css/main.3e20634a.css.map",
+    "main.88f7d484.js.map": "/static/js/main.88f7d484.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e20634a.css",
+    "static/js/main.88f7d484.js"
+  ]
+}
