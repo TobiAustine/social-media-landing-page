@@ -135,7 +135,15 @@
  @media screen and (max-width:600px) {
 
    .floating-icon{
-      bottom: 4rem;
+      bottom: -2rem;
+ }
+
+ }
+
+ @media screen and (max-width:3950px) {
+
+   .floating-icon{
+      bottom: -12rem;
  }
 
  }
