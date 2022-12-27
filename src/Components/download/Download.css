@@ -1,0 +1,65 @@
+section#download{
+    background: linear-gradient(90deg, rgba(45,165,255,1)45%, rgba(1,223,245,1)100%);
+    color: var(--color-white);
+    text-align: center;
+    height: 30rem;
+}
+
+.download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.download h2{
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 1.4;
+    margin: 1.5rem 0;
+    padding-bottom: 0.5rem;
+  
+    position: relative;
+  
+   
+}
+
+.download h2::after{
+    content: " ";
+    display: block;
+    background: var(--color-white);
+    height: 1px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.download-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-top:2em;
+}
+
+.download-icon{
+    margin: 0 2em;
+    padding:1em  3em;
+    border: 2px solid var(--color-white);
+    border-radius: 1em;
+}
+
+@media screen and (max-width:445px) {
+    .download-icons{
+        flex-direction: column;
+    }
+
+    section#download{
+        height: fit-content;
+        padding: 2rem 0;
+    }
+}

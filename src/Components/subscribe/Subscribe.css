@@ -1,0 +1,87 @@
+section#subscribe{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('../../Images/groupSmile.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    color: var(--color-white);
+    text-align: center;
+    height: 30rem;
+    display: flex;justify-content: center;align-items: center;
+}
+
+.subscribe h2{
+    font-size: 3rem;
+    font-weight: 300;
+    list-style: 1.4;
+    padding-bottom: 1rem;
+
+}
+/* 
+form{
+    overflow: hidden;
+} */
+
+form > *{
+    width: 100%;
+    max-width: 50rem;
+    margin: 3rem auto;
+}
+
+form input{
+    padding: 1rem;
+    background: transparent;
+    border: 1px solid #777;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1rem;
+    color: var(--color-white);
+}
+
+form button{
+    padding: 1rem;
+    background: transparent;
+    border: 1px solid #777;
+   border-top-right-radius:1em;
+   border-bottom-right-radius: 1em; 
+   background: var(--form-button);
+   color: var(--color-white) ;
+  outline: none;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.social-icon{
+    margin: 0 1.5em;
+    padding: 1em;
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .9s ease;
+}
+
+.social-icon:hover{
+    background: var(--form-button);
+}
+
+@media screen and (max-width:400px) {
+    form > *{
+       display: block;
+    }
+
+    form button{
+        margin-top: 1em;
+       border-top-left-radius:1em;
+       border-bottom-left-radius: 1em; 
+      
+    }
+
+    form input{
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1rem;
+      
+    }
+}

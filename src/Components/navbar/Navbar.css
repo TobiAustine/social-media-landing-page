@@ -1,0 +1,151 @@
+.navbar{
+     background-color:var(--dark-blue);
+}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+    width: 100%;
+   
+    /* background: orangered; */
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text{
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--color-white);
+}
+
+.logo-text span{
+    color: orangered;
+    font-weight: 600;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-links li{
+    list-style: none;
+    margin-left: 1.5rem;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.6rem;
+    font-weight: 300;
+    transition: all .5s ease;
+}
+
+.nav-links a:hover{
+    color: orangered;
+}
+
+
+.nav-links .btn-dark:hover{
+    border: none;
+    color: var(--color-white);
+    background: orangered;
+}
+
+.navbar .menu-icons{
+    display: none;
+}
+@media screen and (max-width:830px){
+    .nav-btn{
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .nav-links{
+         display: none;   
+        border: 2px solid var(--color-white);
+        /* z-index: 1; */
+    }
+
+    .nav-btn{
+        display: block;
+    }
+
+    .navbar .menu-icons{
+        display: block;
+    }
+
+     .navbar #nav-links-mobile, .navbar #nav-links-mobile-hidden{
+        display: block; 
+        position: absolute;
+        top: 8rem;
+        left: 0;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 5px;
+        background: var(--dark-blue);
+        border-top: 1px solid var(--color-white);
+        transition: all 1s ease-in-out;
+        z-index: 999;
+        
+    } 
+
+    .navbar #nav-links-mobile{
+        animation: slide-in .5s ease;
+        opacity: 1;
+    }
+
+    .navbar #nav-links-mobile-hidden{
+        left: -100%;
+        animation: slide-out 1.5s ease-in-out;
+        
+    }
+
+    @keyframes slide-in{
+        0%{ transform: translateX(-100%);
+        
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slide-out{
+        0%{ transform: translateX(0);
+            
+        
+        }
+        100%{
+            transform: translateX(-100%);
+            
+        }
+    }
+
+    .navbar #nav-links-mobile li, .navbar #nav-links-mobile-hidden li{
+        margin: 2.5rem auto 2rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        border-bottom: 1px solid var(--color-white);
+        width: 80%;
+    }
+
+    .navbar #nav-links-mobile li:last-child, .navbar #nav-links-mobile-hidden li:last-child{
+        border-bottom: none;
+    }
+
+   
+
+
+}
+

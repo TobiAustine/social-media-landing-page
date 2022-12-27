@@ -1,0 +1,48 @@
+#features{
+    padding: 3rem 0;
+    overflow-x: hidden;
+}
+
+.features-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-content .features-left{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.features-content .features-left img{
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+    object-position: 50% 50%;
+    
+    border-radius: 1em;
+}
+
+.features-right{
+    margin-left: 2rem;
+}
+
+@media screen and (max-width:1400px) {
+.features-content {
+    flex-direction: column;
+    gap: 4em;
+}
+    
+}
+
+@media screen and (max-width:45px) {
+.features{
+    width: 90%;
+    margin: 0;
+}
+    
+}
+
+
